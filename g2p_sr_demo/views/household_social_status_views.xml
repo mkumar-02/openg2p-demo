@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Part of OpenG2P Registry. See LICENSE file for full copyright and licensing details.
+-->
+<odoo>
+    <record id="view_groups_form_membership" model="ir.ui.view">
+        <field name="name">view_groups_form_membership</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="g2p_registry_group.view_groups_form" />
+        <field name="arch" type="xml">
+            <field name="kind_name" invisible="1"/>
+            <xpath expr="//page[@name='relationships']" position="before">
+                <page string="Social Status Information" name="social_status_info" invisible="kind_name">
+                    <group col="6" colspan="6">
+                        <field name="pregnent_and_lactating_women" string="Number Of Pregnent and Lactating Women In Household"/>
+                        <field name="malnourished_children_under_five" string="Number Of Malnourished Children Under Five In Household"/>
+                        <field name="disablity" string="Number Of Disabeled Person In Household"/>
+                        <field name="type_of_disablity" string="Type Of Disability"/>
+                        <field name="caste_ethnic_group" string="Caste/Ethnic Group"/>
+                        <field name="protected_group" string="Does the household belong to any protected groups? Like Scheduled Caste/Scheduled Tribe "/>
+                        <field name="vulnerable_status" string="Is the household under any other vulnerable status? Like IDP/refugee/homeless/orphan"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

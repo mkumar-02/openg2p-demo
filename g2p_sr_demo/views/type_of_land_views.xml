@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="action_type_of_land_type_tree" model="ir.ui.view">
+        <field name="name">type_of_land_type_tree</field>
+        <field name="model">g2p.type.of.land</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name" required="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_type_of_land_type" model="ir.actions.act_window">
+        <field name="name">Types Of Land</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">g2p.type.of.land</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add an Type Of Land!
+            </p>
+            <p>
+                Click the create button to enter a new type of land.
+            </p>
+        </field>
+    </record>
+
+    <record id="action_type_of_land_type_tree_view" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="action_type_of_land_type_tree" />
+        <field name="act_window_id" ref="action_type_of_land_type" />
+    </record>
+
+    <menuitem
+        id="type_of_land_type"
+        name="Types Of Land"
+        action="action_type_of_land_type"
+        parent="g2p_registry_base.g2p_configuration_menu_root"
+        sequence="10"
+        groups="g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
+    />
+</odoo>
