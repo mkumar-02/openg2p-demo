@@ -7,7 +7,7 @@
 
 # OpenG2P Demo
 
-OpenG2P Demo is an open-source project built on top of Odoo. It is designed to demonstrate the functionality of the Payment Beneficiary Management System (PBMS) and Social Registry. For more details, refer to the [OpenG2P Documentation](https://docs.openg2p.org).
+OpenG2P Demo is an open-source project built on top of Odoo. It is designed to demonstrate the functionality of the Program and Beneficiary Management System (PBMS) and Social Registry. For more details, refer to the [OpenG2P Documentation](https://docs.openg2p.org).
 
 
 <!-- /!\ do not modify below this line -->
