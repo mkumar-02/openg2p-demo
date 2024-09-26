@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_g2p_individual_marital_status,access.g2p.individual.marital.status,model_g2p_individual_marital_status,base.group_user,1,1,1,1
-access_g2p_individual_education_level,access.g2p.individual.education.level,model_g2p_individual_education_level,base.group_user,1,1,1,1
-access_g2p_individual_employment_status,access.g2p.individual.employment.status,model_g2p_individual_employment_status,base.group_user,1,1,1,1
-access_g2p_source_of_income,access.g2p.source.of.income,model_g2p_source_of_income,base.group_user,1,1,1,1
-access_g2p_type_of_land,access.g2p.type.of.land,model_g2p_type_of_land,base.group_user,1,1,1,1
-access_g2p_type_of_disability,access.g2p.type.of.disability,model_g2p_type_of_disability,base.group_user,1,1,1,1
-access_g2p_type_of_caste,access.g2p.type.of.caste,model_g2p_type_of_caste,base.group_user,1,1,1,1
